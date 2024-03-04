@@ -16,7 +16,6 @@
   "proseWrap": "preserve",
   "insertPragma": true,
   "printWidth": 90,
-  "requirePragma": false,
   "tabWidth": 2,
   "useTabs": false,
 }
