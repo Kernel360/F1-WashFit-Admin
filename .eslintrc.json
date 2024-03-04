@@ -1,4 +1,9 @@
 {
+  "settings": {
+    "react": {
+      "version": "detect" // React 버전 자동 감지
+    }
+  },
   "env": {
     "browser": true,
     "es2021": true
@@ -6,12 +11,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "eslint-plugin-jsx-a11y",
-    "eslint-plugin-prettier",
-    "eslint-plugin-react",
-    "eslint-plugin-react-hooks",
-    "eslint-plugin-react-refresh"
+    "plugin:react/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -19,5 +19,7 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint", "react"],
-  "rules": {}
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  }
 }
